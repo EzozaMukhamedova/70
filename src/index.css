@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+.hero{
+  background: url(../src/assets/images/heroimg.png);
+  background-size: 375px auto; 
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
