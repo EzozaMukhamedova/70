@@ -1,0 +1,1 @@
+export const API_URL = import.meta.anv.VITE_API_URL

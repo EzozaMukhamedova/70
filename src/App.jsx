@@ -25,6 +25,9 @@ import { MdEmail } from "react-icons/md";
 import shoes1 from "./assets/images/shoes1.png";
 import shoes2 from "./assets/images/shoes2.png";
 import shoes3 from "./assets/images/shoes4.png";
+import FeaturedProducts from "../src/pages/FeaturedProducts";
+
+// import ProductSwiper from '../src/pages/ProductSwiper';
 
 const App = () => {
   return (
@@ -91,6 +94,8 @@ const App = () => {
         </nav>
       </header>
       <main>
+        {/* <ProductSwiper />  */}
+
         <section className="hero lg:max-w-[1440px] mx-auto max-w-[571px] ">
           <div className="lg:relative ">
             <div className="hidden w-full mx-auto hero lg:block">
@@ -112,6 +117,14 @@ const App = () => {
             </div>
           </div>
         </section>
+        <section>
+          <div className="">
+          
+            {" "}
+            <FeaturedProducts />
+          </div>
+        </section>
+
         <section>
           <div className="flex flex-col items-center mx-auto">
             <h1 className="text-[34px] leading-[38px] text-center lg:pt-[80px] lg:pb-[48px] pt-[40px] pb-[24px]">
@@ -194,6 +207,7 @@ const App = () => {
             </div>
           </div>
         </section>
+        
         <section className="bg-[#141718] ">
           <div className="lg:flex lg:max-w-[1440px] mx-auto">
             <div className="hidden lg:block">
