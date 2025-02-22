@@ -7,7 +7,7 @@ const FeaturedProducts = () => {
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    fetch(API_URL + "/products")
+    fetch("http://localhost:5000/products")
       .then((response) => response.json())
       .then((data) => {
         if (data.message === "Success" && Array.isArray(data.data)) {
@@ -28,6 +28,10 @@ const FeaturedProducts = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  if (products.length === 0) {
+    return <div className="text-center text-[25px] py-[20px]">Loading...</div>;
+  }
 
   return (
     <div className="container w-full sm:w-[375px] lg:w-[1184px] px-4 mx-auto cursor-pointer">
